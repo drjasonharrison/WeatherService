@@ -46,31 +46,11 @@ brew install maven
 
 ## To Do
 
-* use city names, rather than id's
-* create default root page with form to select city and submit request
-  * "q=London,uk" or id=2643743
-  * "q=Hong%20Kong" or id=1819729
-* create service that responds to submitted requests
-* send request to OpenWeatherMap.org and receive response
-  * eg [example](http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=c8f638bd81f2b411844c3982b70fde00)
-* parse JSON response extracting:
-  * name: city name
-  * weather.main: overall description of the weather
-  * main.temp: temperature in Kelvin
-  * sys.sunrise: sunrise time (UTC seconds)
-  * sys.sunset: sunset time (UTC seconds)
-* add local system date
-  
-* convert temperature from Kelvin to Celsius and Fahrenheit
-* convert sunset and sunrise from UTC to local time in 12-hour clock
-
 * handle error responses from OpenWeatherMap
 * define an error handler for internal errors
 * unit tests: WeatherResponse
 * move OpenWeatherMap API key into server configuration file
 * load list of cities and ID's from OpenWeatherMap city.list.json
-* use city IDs rather than string names
 * add database, or memory cache, of recent weather requests. Use cached value for requests within ten minutes, or even up to an hour
 * localization: strings, dates and temperature formats
 * error checking of json response (schema) or individual json paths
-
