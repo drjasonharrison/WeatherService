@@ -1,4 +1,4 @@
-# Weather website 
+# Weather Service 
 
 ## Description
 * A website which will return current weather data from [OpenWeatherMap.org](OpenWeatherMap.org), based on a city chosen by the user, which should support:
@@ -9,16 +9,13 @@
   * the city name
   * overall description of the weather (e.g. "Light rain", "Clear sky", etc.) o temperature in Fahrenheit and Celsius
 	* sunrise and sunset times in 12 hour format (e.g. 9:35am; 11:47pm)
-* the styling / layout of the website itself is not a priority — please feel free to use plain HTML with no styling
+* the styling / layout of the website itself is not a priority 
 
 ## Implementation details
 
 * the backend of the application uses core Java SE, EE and any 3rd party libraries that you deem relevant
 * the project uses Maven 3.3 and Java SE8. Full instructions for set-up on macOS 10.11 are included below.
-* the website should able to be run on a port of ‘localhost’, via some embedded application server (e.g. Jetty or similar)
-* Production quality code is much more important than feature completion.
-  *  If you run out of time, please err on the side of ensuring the code you have
-implemented is ‘production-ready’, even if it means completing less features.
+* the website can be run on a port of ‘localhost’, using tomcat
 
 ### Setup (Mac OSX 10.11)
 
@@ -43,6 +40,16 @@ brew install maven
   4. Right click on the project, select Maven > Update Project
 
   Note: if you have built the project then Lombok is probably installed in ~/.m2/repository/org/projectlombok/lombok/1.16.20
+
+
+## Running it
+
+At the terminal, execute in the same directory as the pom.xml file:
+```
+mvn spring-boot:run
+```
+
+Then in your browser open [http://localhost:8090](http://localhost:8090).
 
 ## To Do
 
