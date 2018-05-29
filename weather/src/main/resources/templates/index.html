@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Weather Service</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<h2>Weather Service</h2>
+
+Select a city:
+
+<form action="#" th:action="@{/weather}" th:object="${CityWeatherRequest}" method="post">
+  <select name="City" th:field="*{cityName}">
+    <option value="2643743">London, United Kingdom</option>
+    <option value="1819729">Hong Kong, China</option>
+  </select>
+  <p><input type="submit" value="Get city weather" /> 
+</form>
+</body>
+</html>
+
