@@ -13,9 +13,9 @@
 
 ## Implementation details
 
-* the backend of the application uses core Java SE, EE and any 3rd party libraries that you deem relevant
-* the project uses Maven 3.3 and Java SE8. Full instructions for set-up on macOS 10.11 are included below.
-* the website can be run on a port of ‘localhost’, using tomcat
+* the backend of the application uses core Java SE, EE and some 3rd party libraries that I deemed relevant
+* the project uses Maven 3.3 and Java SE8. Full instructions for set-up on macOS 10.11 are included below
+* the website can be run on a port of ‘localhost’, using tomcat launched from Maven
 
 ### Setup (Mac OSX 10.11)
 
