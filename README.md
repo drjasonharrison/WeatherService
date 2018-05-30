@@ -44,7 +44,7 @@ brew install maven
 
 ## Running it
 
-At the terminal, execute in the same directory as the README.md file:
+At the terminal, execute in the same directory as the pom.xml file:
 ```
 mvn spring-boot:run
 ```
